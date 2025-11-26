@@ -71,6 +71,11 @@ export async function login(req: Request, res: Response){
             }
         });
     }
+        (req.session as any).user = {
+            name:user.nome,
+            email:user.email,
+            id: user.id
+        }    
 
         return res.redirect('/adm');
 }
