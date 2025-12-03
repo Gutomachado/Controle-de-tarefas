@@ -3,12 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9e33e7010c.js" crossorigin="anonymous"></script>
     <title>Tarefas</title>
-    
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+  background-color: #f398f3;
+}
+ .User{
+    text-align: right;
+    padding-right: 10px;
+ }
+
+ .Formulario{
+    border: 5px solid #f125f1;
+ }
+.Titulo{
+    position: relative;
+    bottom: 60px;
+    padding-left: 10px;
+}
+
+ .Divisao{
+    width:200px;
+    height: 597px;
+    padding-left: 10px;
+    border: 5px solid #940894;
+    background-color: #f8c2f8;
+   } 
+   .Botao{
+   position: relative ;
+   left: 95%;
+   
+   } 
+
+
+
+    </style>
 </head>
 <body>
+<form class="Formulario">
+    <div class="Header">
+        <h1 class="User"><%=user.name%>
+        <i class="fa-regular fa-circle-user"></i>
+        </h1>
+        <h1 class="Titulo">Controle de tarefas</h1>
+       <button class="Botao">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">Sair</a>
+    </button>
+</div>
+</form>
+<form>
+<div class="Divisao">
+  <h1 class="Cadastrar"></h1>
+  <a href="#">Cadastrar</a>
+  <h1 class="Listar"></h1>
+  <a href="#">Listar</a>
 
-        <h1>Você sabia que o pedro é gay?<%=user.name%></h1>
-       
+</div>
+ </form>
+ 
 </body>
 </html>
