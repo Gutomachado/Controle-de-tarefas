@@ -80,4 +80,13 @@ export async function login(req: Request, res: Response){
         return res.redirect('/adm');
 }
 
+export async function logout(req: Request, res: Response) {
+    req.session.destroy(() => {
+        res.redirect('/usuario/login');
+    });
+}
 
+export async function show_users(req: Request, res: Response) {
+    const {user} = req.session as any;
+    res.render('users', { user });
+}
